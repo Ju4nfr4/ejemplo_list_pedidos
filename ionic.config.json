@@ -1,0 +1,7 @@
+{
+  "name": "ejemplo_list_pedidos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
