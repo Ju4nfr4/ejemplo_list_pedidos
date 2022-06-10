@@ -1,0 +1,46 @@
+<ion-header >
+  <ion-toolbar color="new"> 
+    <ion-title>Inicio Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content color="secondary"> -->
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-img name="minion.png" src="../../../assets/icon/log.png" style="width: 80px; height: 80px; display: block; margin: 0px auto;"></ion-img>
+    </ion-card-header>
+
+    <form #formulario="ngForm" (ngSubmit)="onSubmit()" >
+      <ion-item lines="full">
+        <ion-label position="floating">Email</ion-label>
+        <!-- <ion-input  name="email"
+                    type="text"
+                    [(ngModel)]="usuario.email"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" 
+                    required></ion-input>
+      </ion-item> -->
+      <ion-input  name="email"
+                    type="text"
+                    [(ngModel)]="usuario.email"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input  name="password"
+                    type="password" 
+                    [(ngModel)]="usuario.password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" expand="block" >Iniciar sesión</ion-button>
+          <a [routerLink]="['/forgot-password']" class="small-text">¿Olvidaste tu contraseña?</a>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-card>
+
+  <!-- <ion-button (click)="mostrar_listado()" expand="block">
+    Mostrar listado
+  </ion-button> -->
+
+</ion-content>

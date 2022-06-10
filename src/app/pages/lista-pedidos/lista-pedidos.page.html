@@ -1,0 +1,32 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista-Pedidos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+  <ion-list>
+    <ion-item *ngFor="let user of usuarios | async">
+      <ion-label>
+        <!-- <h3> James</h3>
+        <p>james@jads.copon</p> -->
+        <h3>{{ user.name}}</h3>
+        <p>{{user.email}}</p>
+      </ion-label>
+
+      <ion-label slot="end" class="ion-t4esxt-end text-small">{{user.phone}}</ion-label>
+      <!-- <ion-label slot="end" class="ion-t4esxt-end text-small">622 69321 1</ion-label> -->
+
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="salirSinArgumentos()">
+    Salir sin argumentos
+  </ion-button>
+
+</ion-content>
