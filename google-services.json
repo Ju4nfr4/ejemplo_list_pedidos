@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "557511300409",
+    "project_id": "ejemplo-list-pedidos",
+    "storage_bucket": "ejemplo-list-pedidos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557511300409:android:d0e052edd3efc52ed184e8",
+        "android_client_info": {
+          "package_name": "com.prueba.ionicpush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557511300409-eoi1t5iij2ijpmgq63mg93k07g76vohb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8-MUKqbBouzB4Z4QM3R4JspCu7P4KcZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557511300409-eoi1t5iij2ijpmgq63mg93k07g76vohb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
